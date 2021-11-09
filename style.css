@@ -62,7 +62,7 @@ img {
     margin-right: 2rem;
 }
 
-.link-about:hover, .link-projects:hover {
+.link-projects:hover {
     border-bottom: 2px solid #EEEEEE;
 }
 

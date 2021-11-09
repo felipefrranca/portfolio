@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #222831;
+    color: #EEEEEE;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2 {
+    font-weight: 600;
+    text-align: center;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    margin-top: 5.1rem;
+    font-size: 3rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 10%;
+    background-color: #00ADB5;
+}
+
+.nav-list li {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-right: 2rem;
+}
+
+.link-about:hover, .link-projects:hover {
+    border-bottom: 2px solid #EEEEEE;
+}
+
+.link-contact {
+    border: 2px solid #EEEEEE;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+.link-contact:hover {
+    border-color: #222831;
+    background-color: #222831;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#welcome-section p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #00ADB5;
+}
+
+.projects {
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+.project {
+    margin: 1rem 2rem;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #EEEEEE;
+    border-radius: 0 .0 .5rem .5rem;
+    background-color: #00ADB5;
+    color: #EEEEEE;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .5rem;
+    height: 4rem;
+}
+
+.project-title:hover {
+    border: 2px solid #00ADB5;
+    border-radius: 0 0 .5rem .5rem;
+    background-color: #222831;
+}
+
+.showall {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.showall:hover {
+    color: #222831;
+    font-weight: bold;
+}
+
+:hover {
+    transition: calc(0.5s);
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-top: 4rem;
+}
+
+.social-medias {
+    font-size: 1.1rem;
+    margin-top: 4rem;
+}
+
+.social-medias a:hover {
+    color: #00ADB5;
+}
+
+#profile-link {
+    margin: 0 2rem;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 18rem;
+}
+
+@media (max-width: 575.98px) {
+    #welcome-section h1 {
+        font-size: 2rem;
+        margin: 0 1rem;
+    }
+
+    #welcome-section p {
+        font-size: .7rem;
+        margin: 0 1rem;
+    }
+
+    .project-title {
+        font-size: .3rem;
+        margin: 1rem 0;
+    }
+
+    .social-medias {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #profile-link {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    #welcome-section p {
+        font-size: 1rem;
+    }
+
+    .project-title {
+        font-size: .8rem;
+    }
+}
